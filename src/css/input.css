@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        background-color: #1e1e1e;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px];
+    }
+    .title {
+        @apply text-[44px];
+        @apply font-semibold;
+        @apply leading-[62px];
+        @apply tracking-[-0.088px];
+    }
+    .btn-primary {
+        @apply h-11;
+        @apply text-base;
+        @apply font-medium;
+        @apply rounded-xl;
+    }   
+    .btn-sec {
+
+    }
+}
