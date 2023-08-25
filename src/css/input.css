@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body {
         font-family: 'Poppins', sans-serif;
@@ -19,6 +20,13 @@
         @apply font-semibold;
         @apply leading-[62px];
         @apply tracking-[-0.088px];
+        @apply md:text-[36px] md:leading-[54px] sm:text-[28px] sm:leading-[44px] xs:text-[20px] xs:leading-[32px]
+    }
+    .subtitle {
+        @apply text-xl font-medium tracking-[-0.04px];
+    }
+    .service-text {
+        @apply text-base tracking-[-0.032px] text-gray-500;
     }
     .btn-primary {
         @apply h-11;
@@ -26,7 +34,88 @@
         @apply font-medium;
         @apply rounded-xl;
     }   
-    .btn-sec {
-
+    .btn-buy {
+        @apply text-[12px];
+        @apply font-semibold;
+        @apply text-pink-dark;
+        @apply rounded-md;
+        @apply border-pink-dark;
+        @apply border-[1px];
+        @apply px-[18px];
+        @apply py-[6px];
     }
+    .bg-intro {
+        background: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);
+    }
+    .btn-sec {
+        @apply rounded-xl;
+        @apply border-white;
+        @apply border-[1px];
+        @apply px-6;
+        @apply py-[10px];
+        @apply text-white;
+        @apply text-base;
+        @apply xs:text-sm;
+        @apply xs:px-5;
+    }
+    .tab_active, .tab_hover {
+        @apply text-pink-dark !important;
+        @apply transition-all;
+        @apply duration-200;
+    }
+
+    .tab_active:after, .tab_hover:after {
+        @apply content-[''];
+        @apply absolute;
+        @apply h-[1px];
+        @apply bg-pink-dark;
+        @apply left-0;
+        @apply top-full;
+        @apply animate-width;
+    }
+    .tab-btn {
+        @apply relative cursor-pointer hover:text-pink-dark hover:tab_hover transition-all duration-200 text-gray-400 text-[17px] tracking-[-0.034px];
+        @apply md:text-sm sm:w-fit;
+    }
+    .card {
+        @apply w-[277px];
+        @apply rounded-xl;
+        @apply bg-white;
+        @apply shadow-card;
+    }
+    .service-item {
+        @apply pt-[25px] pr-[48px] pb-[25px] pl-[25px] sm:p-[10px];
+    }
+    img {
+        @apply w-full;
+        @apply h-full;
+        @apply object-cover;
+    }
+}
+
+
+
+#burger-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    transition: .2s all ease;
+}
+
+#burger-btn.active span:nth-child(1){
+    transform: rotate(45deg) translateY(5px);
+}
+#burger-btn.active span:nth-child(2){
+    display: none;
+}
+#burger-btn.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-5px);
+}
+
+#menu {
+    transition: .3s all ease;
+}
+#menu.active {
+    transform: translateX(0%);
 }

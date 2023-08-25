@@ -9,35 +9,340 @@
     <title>Outschool</title>
 </head>
 <body>
-    <header class="pt-9 px-12">
+
+    <main>
         <div class="container">
-            <div class="flex justify-between items-center">
-                <div class="cursor-pointer">
-                    <img src="./assets/icons/logo.svg" alt="logo">
-                </div>
-                <div>
-                    <nav>
-                        <ul class="flex space-x-[30px]">
-                            <li><a href="#" class="text-white text-[15px] font-medium">Courses</a></li>
-                            <li><a href="#" class="text-white text-[15px] font-medium">Pricing</a></li>
-                            <li><a href="#" class="text-white text-[15px] font-medium">About Us</a></li>
-                            <li><a href="#" class="text-white text-[15px] font-medium">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="flex space-x-[30px]">
-                    <div class="flex cursor-pointer">
-                        <div><img src="./assets/icons/user.svg" alt="account"></div>
-                        <div class="text-white text-[15px] font-medium ml-1">Account</div>
+            <div class="relative z-10 overflow-hidden">
+                <div class="bg-intro rounded-br-[200px] after:absolute after:inset-0 after:bg-white after:z-[-1]">
+                    <header class="pt-9 px-12 sm:px-3">
+                        <!-- <div class="container"> -->
+                            <div class="flex justify-between items-center">
+                                <div class="cursor-pointer xs:w-14">
+                                    <img src="./assets/icons/logo.svg" alt="logo">
+                                </div>
+                                <div class="md:hidden">
+                                    <nav>
+                                        <ul class="flex space-x-[30px]">
+                                            <li><a href="#" class="text-white text-[15px] font-medium">Courses</a></li>
+                                            <li><a href="#" class="text-white text-[15px] font-medium">Pricing</a></li>
+                                            <li><a href="#" class="text-white text-[15px] font-medium">About Us</a></li>
+                                            <li><a href="#" class="text-white text-[15px] font-medium">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div id="menu" class="w-full absolute left-0 right-0 top-16 bg-black translate-x-[-100%] p-5">
+                                    <nav class="w-32 mx-auto">
+                                        <ul class="flex space-y-[20px] flex-col items-center bg-lightred p-4 gap-5 text-left">
+                                            <li class="w-full"><a href="#" class="text-white text-[15px] font-medium">Courses</a></li>
+                                            <li class="w-full"><a href="#" class="text-white text-[15px] font-medium">Pricing</a></li>
+                                            <li class="w-full"><a href="#" class="text-white text-[15px] font-medium">About Us</a></li>
+                                            <li class="w-full"><a href="#" class="text-white text-[15px] font-medium">Contact Us</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <button id="burger-btn" class="cursor-pointer hidden md:block">
+                                    <span class="mb-1"></span>
+                                    <span class="mb-1"></span>
+                                    <span></span>
+                                </button>
+                                <div class="flex space-x-[30px] xs:space-x-1">
+                                    <div class="flex cursor-pointer">
+                                        <div><img src="./assets/icons/user.svg" alt="account"></div>
+                                        <div class="text-white text-[15px] font-medium ml-1 xs:hidden">Account</div>
+                                    </div>
+                                    <div class="flex cursor-pointer">
+                                        <div><img src="./assets/icons/cart.svg" alt="cart"></div>
+                                        <div class="text-white text-[15px] font-medium ml-1 xs:hidden">Cart</div>
+                                    </div>
+                                </div>  
+                            </div>
+                        <!-- </div> -->
+                    </header>
+                    <div class="flex pl-[135px] pt-[135px] md:pl-[70px] md:flex-col sm:px-2 min-h-[800px] xs:min-h-[640px]">
+                        <div class="block w-1/2 md:w-full md:text-center">
+                            <h1 class="text-white text-6xl font-bold leading-normal xl:text-5xl lg:text-4xl md:text-2xl">Upgrade YOUR skills for better future</h1>
+                            <p class="text-white mt-5 text-[22px] lg:text-lg md:text-base">Lorem ipsum dolor sit amet consectetur. Erat in commodo in a. Sit interdum mi felis laoreet sagittis.</p>
+                            <div class="flex mt-8 space-x-5 sm:justify-center">
+                                <a href="#" class="btn-sec bg-purple">Check Courses</a>
+                                <a href="#" class="btn-sec">Learn more</a>
+                            </div>
+                        </div>
+                        <div class="w-1/2 max-w-[616px] max-h-[507px] md:self-center md:mt-8">
+                            <img src="./assets/img/dude.png" alt="dude" class="w-full h-full object-cover">
+                        </div>
                     </div>
-                    <div class="flex cursor-pointer">
-                        <div><img src="./assets/icons/cart.svg" alt="cart"></div>
-                        <div class="text-white text-[15px] font-medium ml-1">Cart</div>
-                    </div>
-                </div>  
+
+                    
+                </div>
             </div>
+
+            <section class="block px-44 pt-11 bg-white md:px-14 sm:px-10 xs:px-1">
+                <h2 class="text-[40px] font-semibold tracking-[-0.08px] text-gray-700 text-center sm:text-3xl xs:text-2xl">Our Company and Partners</h2>
+                <ul class="grid grid-cols-custom-5 mt-10 flex-wrap gap-x-[100px] gap-y-[30px] sm:gap-x-[50px]">
+                    <li class="justify-self-center"><img src="./assets/icons/microsoft.svg" alt="microsoft"></li>
+                    <li class="justify-self-center"><img src="./assets/icons/treehouse.svg" alt="treehouse"></li>
+                    <li class="justify-self-center"><img src="./assets/icons/amazon.svg" alt="amazon"></li>
+                    <li class="justify-self-center"><img src="./assets/icons/slack.svg" alt="slack"></li>
+                    <li class="justify-self-center"><img src="./assets/icons/google.svg" alt="google"></li>
+                </ul>
+            </section>
+
+            <section class="bg-white px-[136px] pt-24 lg:px-[40px]">
+                <h2 class="title">Our Courses</h2>
+                <ul class="tab-btns flex space-x-7 mt-7 sm:flex-col sm:space-x-0">
+                    <li class="tab-btn tab_active" data-tab="rated">Top Rated</li>
+                    <li class="tab-btn" data-tab="development">Development</li>
+                    <li class="tab-btn" data-tab="design">Design</li>
+                    <li class="tab-btn" data-tab="music">Music</li>
+                    <li class="tab-btn" data-tab="marketing">Marketing</li>
+                    <li class="tab-btn" data-tab="business">Business</li>
+                    <li class="tab-btn" data-tab="photography">Photography</li>
+                </ul>
+                <ul class="tab-contents mt-[50px]">
+                    <li class="grid grid-cols-custom-4 gap-x-5 gap-y-[50px] md:justify-center" data-tab="rated">
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/robot.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">Artificial Intelligence</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">Modern Artificial Intelligence with zero coding</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Jhon David</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/mac.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">UX/UI Designing</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">Figma UX/UI Design essentials</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Daniel Walter Scott</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/uiux.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">UX/UI Designing</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">Complete figma mega course: UX/UI Design Beginner to Expert  </h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Kaleb Kingston</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/webdev.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">Web Development</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">The Complete 2022 Fullstack Web Developer course</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Mark Lassoff</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/js.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">Web Development</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">Javascript for beginners</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Jhon David</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/complete.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">Digital Marketing</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">Digital Advertising and Marketing 101: The Complete...</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Ben Silverstain</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/courses.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">Digital Marketing</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">Mega Digital Marketing course: 12 Courses in 1</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Phil Ebiner</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card justify-self-center">
+                            <div class="w-full">
+                                <img src="./assets/img/experience.jpg" alt="rated">
+                            </div>
+                            <div class="p-[18px]">
+                                <div class="px-[16px] py-[7px] w-fit bg-blue-light rounded-[7px] text-xs text-gray-500 font-medium tracking-[-0.029px]">UX/UI Designing</div>
+                                <h3 class="text-[15px] font-semibold tracking-[-0.036px] mt-5">User Experience Design Essentials</h3>
+                                <p class="text-[12px] tracking-[-0.029px] mt-[5px]">Jacob Murphy</p>
+                                <div class="mt-[9px]">
+                                    <ul class="flex space-x-[1px]">
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li><img src="./assets/icons/star.svg" alt="star"></li>
+                                        <li class="text-[12px] font-semibold ml-[6px!important]">4.9</li>
+                                    </ul>
+                                </div>
+                                <div class="flex justify-between items-center mt-[6px]">
+                                    <p class="text-xl text-pink-dark font-bold tracking-[-0.048px]">$ 49.99</p>
+                                    <button class="btn-buy hover:text-white hover:bg-pink-dark transition-all duration-200">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hidden" data-tab="development">Content-2</li>
+                    <li class="hidden" data-tab="design">Content-3</li>
+                    <li class="hidden" data-tab="music">Content-4</li>
+                    <li class="hidden" data-tab="marketing">Content-5</li>
+                    <li class="hidden" data-tab="business">Content-6</li>
+                    <li class="hidden" data-tab="photography">Content-7</li>
+                </ul>
+            </section>
+
+            <section class="pt-[126px] px-[195px] bg-white lg:px-[40px] sm:p-1">
+                <h2 class="title text-center">Our Features and Services</h2>
+                <p class="text-base tracking-[-0.032px] text-center max-w-3xl mx-auto sm:text-sm">Lorem ipsum dolor sit amet consectetur. Euismod diam phasellus quis aliquet purus sem ornare mollis vulputate. Sapien purus faucibus massa pharetra.</p>
+                <div class="grid grid-cols-custom-3 gap-[15px] mt-[60px] sm:grid-cols-custom-3-575">
+                    <div class="service-item">
+                        <div class="w-[44px] h-[44px]"><img src="./assets/icons/key.svg" alt="key"></div>
+                        <h3 class="subtitle mt-2">Life Time Access</h3>
+                        <p class="service-text mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in porttitor in sit sem eu, nunc diam. Quis nisi, </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="w-[44px] h-[44px]"><img src="./assets/icons/monitor.svg" alt="key"></div>
+                        <h3 class="subtitle mt-2">Life Time Access</h3>
+                        <p class="service-text mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in porttitor in sit sem eu, nunc diam. Quis nisi, </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="w-[44px] h-[44px]"><img src="./assets/icons/certificate.svg" alt="key"></div>
+                        <h3 class="subtitle mt-2">Life Time Access</h3>
+                        <p class="service-text mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in porttitor in sit sem eu, nunc diam. Quis nisi, </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="w-[44px] h-[44px]"><img src="./assets/icons/expert.svg" alt="key"></div>
+                        <h3 class="subtitle mt-2">Life Time Access</h3>
+                        <p class="service-text mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in porttitor in sit sem eu, nunc diam. Quis nisi, </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="w-[44px] h-[44px]"><img src="./assets/icons/badge.svg" alt="key"></div>
+                        <h3 class="subtitle mt-2">Life Time Access</h3>
+                        <p class="service-text mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in porttitor in sit sem eu, nunc diam. Quis nisi, </p>
+                    </div>
+                    <div class="service-item">
+                        <div class="w-[44px] h-[44px]"><img src="./assets/icons/dollar.svg" alt="key"></div>
+                        <h3 class="subtitle mt-2">Life Time Access</h3>
+                        <p class="service-text mt-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet in porttitor in sit sem eu, nunc diam. Quis nisi, </p>
+                    </div>
+                </div>
+            </section>
+            
         </div>
-    </header>
+        
+    </main>
+    
 
     <script src="./js/main.js"></script>
 </body>
