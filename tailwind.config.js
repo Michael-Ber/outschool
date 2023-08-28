@@ -16,14 +16,10 @@ module.exports = {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif']
     },
-    gridTemplateColumns: {
-      'custom-3': 'repeat(auto-fill, minmax(340px, auto))',
-      'custom-3-575': 'repeat(auto-fill, minmax(280px, auto))',
-      'custom-4': 'repeat(auto-fill, minmax(277px, auto))',
-      'custom-5': 'repeat(auto-fill,minmax(100px, auto))'
-    },
+    
     boxShadow: {
-      'card': '0px 0px 9px 0px rgba(153, 153, 151, 0.25)'
+      'card': '0px 0px 9px 0px rgba(153, 153, 151, 0.25)',
+      'input': '0px 1px 15px 0px rgba(0, 0, 0, 0.15)'
     },
     extend: {
       colors: {
@@ -50,7 +46,14 @@ module.exports = {
       },
       animation: {
         width: 'width .5s ease forwards'
-      }
+      },
+      gridTemplateColumns: {
+        'custom-3': 'repeat(auto-fill, minmax(340px, auto))',
+        'custom-3-575': 'repeat(auto-fill, minmax(280px, auto))',
+        'custom-4': 'repeat(auto-fill, minmax(277px, auto))',
+        'custom-5': 'repeat(auto-fill,minmax(100px, auto))',
+        'custom-5-fit': 'repeat(auto-fit,minmax(100px, auto))',
+      },
     },
   },
   plugins: [],
