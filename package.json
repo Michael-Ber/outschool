@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --minify --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15"
+  }
 }

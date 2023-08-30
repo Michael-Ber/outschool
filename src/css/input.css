@@ -51,19 +51,18 @@
         background: linear-gradient(110deg, #4923b4 0%, #e878cf 100%);
     }
     .btn-sec {
-        @apply rounded-xl;
-        @apply border-white;
-        @apply border-[1px];
-        @apply px-6;
-        @apply py-[10px];
-        @apply text-white;
-        @apply text-base;
-        @apply xs:text-sm;
-        @apply xs:px-5;
+        @apply rounded-xl border-white border-[1px] px-6 py-[10px] text-white text-base;
+        @apply xs:text-sm xs:px-5;
+        @apply hover:bg-white hover:text-black transition-all duration-300;
+        
     }
+    /* .btn-sec {
+        background-color: #8f0270;
+    } */
     .btn-more {
-        @apply text-white text-lg font-medium tracking-[-0.043px] px-[39px] py-[11px] bg-pink-medium rounded-xl;
+        @apply text-white text-lg font-medium tracking-[-0.043px] px-[39px] py-[11px] bg-pink-light rounded-xl;
         @apply md:text-base md:px-[30px] md:py-[7px];
+        @apply hover:bg-pink-medium transition-colors duration-300;
     }
     .tab_active, .tab_hover {
         @apply text-pink-dark !important;
