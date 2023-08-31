@@ -44,10 +44,28 @@ module.exports = {
         width: {
           '0%': {width: '0%'},
           '100%': {width: '100%'} 
+        },
+        heightIn: {
+          from : {
+            'max-height': '0px'
+          },
+          to: {
+            'max-height': 'fit-content'
+          }
+        },
+        heightOut: {
+          from : {
+            'max-height': '1200px'
+          },
+          to: {
+            'max-height': '0px'
+          }
         }
       },
       animation: {
-        width: 'width .5s ease forwards'
+        width: 'width .5s ease forwards',
+        heightIn: 'heightIn .5s ease forwards',
+        heightOut: 'heightOut .5s ease forwards'
       },
       gridTemplateColumns: {
         'custom-3': 'repeat(auto-fill, minmax(340px, auto))',

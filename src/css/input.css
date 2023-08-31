@@ -18,6 +18,9 @@
     .container {
         @apply max-w-[1440px];
     }
+    .container-faq {
+        @apply max-w-[1140px] mx-auto;
+    }
     .title {
         @apply text-[44px];
         @apply font-semibold;
@@ -56,9 +59,6 @@
         @apply hover:bg-white hover:text-black transition-all duration-300;
         
     }
-    /* .btn-sec {
-        background-color: #8f0270;
-    } */
     .btn-more {
         @apply text-white text-lg font-medium tracking-[-0.043px] px-[39px] py-[11px] bg-pink-light rounded-xl;
         @apply md:text-base md:px-[30px] md:py-[7px];
@@ -96,6 +96,9 @@
         @apply w-full;
         @apply h-full;
         @apply object-cover;
+    }
+    .accordion-btn_active {
+        @apply rotate-180;
     }
 }
 
