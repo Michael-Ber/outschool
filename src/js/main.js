@@ -43,7 +43,9 @@ function tabs() {
 }
 tabs();
 
-function accordion() {
+//Working version of accordion
+
+function accordion() { 
     try {
         const accordBtn = document.querySelectorAll('.accordion-btn');
         accordBtn.forEach(btn => {
@@ -64,13 +66,6 @@ function accordion() {
                     svg.classList.toggle('accordion-btn_active');
                     btn.nextElementSibling.style.maxHeight = '0px';
                 }
-                
-                
-                
-                
-                
-                
-                
             })
         })
         
