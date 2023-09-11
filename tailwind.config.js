@@ -2,7 +2,7 @@ const autoprefixer = require('autoprefixer');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/*.{html,js}", "./src/**/*.{js}"],
+  content: ["./src/*.{html,js}", "./src/js/*.js"],
   theme: {
     container: {
       // padding: '20px',
