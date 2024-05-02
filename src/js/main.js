@@ -1,4 +1,3 @@
-console.log('test');
 
 function burger() {
     try {
@@ -28,11 +27,12 @@ function tabs() {
         const hideContents = () => { Array.from(contents.children).forEach(content => content.classList.add('hidden')) }
 
         btns.addEventListener('click', (e) => {
-            if(e.target.tagName === 'LI') {
+            console.log(e.target.tagName);
+            if(e.target.tagName === 'BUTTON') {
                 resetActive();
                 hideContents();
-                e.target.classList.add('tab_active');
-                const content = Array.from(contents.children).find(item => item.dataset.tab === e.target.dataset.tab);
+                e.target.parentNode.classList.add('tab_active');
+                const content = Array.from(contents.children).find(item => item.dataset.tab === e.target.parentNode.dataset.tab);
                 content.classList.toggle('hidden')
             }
         })
